@@ -1,7 +1,7 @@
 <h1 align="center">Front-end</h1>
 
 
-This the front-end application for the [frontend application](https://github.com/Web-IV/1920-b1-be-reeveng).
+This the front-end application for the [restful API](https://github.com/Web-IV/1920-b1-be-reeveng).
 
 This project is part of the Web Application IV course for the Bachelor of Applied Informatics at the Ghent University College [HoGent](https://www.hogent.be/en/) (Academic year 2019-2020).
 
