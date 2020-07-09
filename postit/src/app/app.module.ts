@@ -8,12 +8,14 @@ import { AppRoutingModule } from './app-routing.module';
 //components
 import { HomeComponent } from './pages/home/home.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { NavComponent } from './components/nav/nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
