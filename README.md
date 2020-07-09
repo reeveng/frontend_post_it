@@ -16,7 +16,7 @@ This project is part of the Web Application IV course for the Bachelor of Applie
 ## Built With
 
 - [Angular](https://angular.io)
-- [Angular epic spinners](https://github.com/hackafro/angular-epic-spinners#readme)
+- [Angular Material](https://material.angular.io)
 
 ## Team
 | <a href="https://github.com/reeveng" target="_blank">**Reeven Govaert**</a> | 
