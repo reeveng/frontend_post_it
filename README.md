@@ -19,6 +19,7 @@ This project is part of the Web Application IV course for the Bachelor of Applie
 - [Angular Material](https://material.angular.io)
 - [TypeScript](https://www.typescriptlang.org)
 - [ThreeJS](https://threejs.org)
+- [Ngx TypedJS](https://github.com/thevladeffect/ngx-typed-js)
 
 ## Team
 | <a href="https://github.com/reeveng" target="_blank">**Reeven Govaert**</a> | 
