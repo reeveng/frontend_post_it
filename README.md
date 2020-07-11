@@ -18,6 +18,7 @@ This project is part of the Web Application IV course for the Bachelor of Applie
 - [Angular](https://angular.io)
 - [Angular Material](https://material.angular.io)
 - [TypeScript](https://www.typescriptlang.org)
+- [ThreeJS](https://threejs.org)
 
 ## Team
 | <a href="https://github.com/reeveng" target="_blank">**Reeven Govaert**</a> | 
