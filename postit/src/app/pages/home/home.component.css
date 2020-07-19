@@ -1,0 +1,13 @@
+.c_home--container {
+  max-width: 80%;
+  text-align: center;
+}
+
+app-user {
+  width: 100%;
+  padding: 1rem;
+}
+
+.display-none {
+  display: none;
+}

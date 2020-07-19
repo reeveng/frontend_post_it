@@ -1,0 +1,11 @@
+mat-card div * {
+  margin: 0 1rem;
+}
+
+mat-card div *:first-child {
+  margin-left: 0;
+}
+
+mat-card div *:last-child {
+  margin-right: 0;
+}

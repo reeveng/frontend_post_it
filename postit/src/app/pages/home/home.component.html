@@ -1,1 +1,31 @@
-<p>home works!</p>
+<div fxLayoutAlign="center">
+  <div class="c_home--container">
+    <div *ngIf="(users$ | async ) as users; else loadingOrError" fxFill>
+      <div *ngIf="(loggedInUser$ | async) as user">
+        <ngx-typed-js [typeSpeed]="100" [strings]="['Welcome ']" [showCursor]="false">
+          <h1>
+            <span class="typing"></span> {{user}}
+          </h1>
+        </ngx-typed-js>
+      </div>
+
+      <div *ngFor="let user of users">
+        <div fxLayout="column" fxLayoutAlign="start stretch">
+          <app-user [user]="user"></app-user>
+        </div>
+      </div>
+    </div>
+
+    <ng-template #loadingOrError>
+      <mat-card>
+        <mat-error data-cy="appError" *ngIf="(loadingError$ | async) as errorMessage; else loading">
+          Error loading the users: {{ errorMessage }}. <br />
+          Please try again later.
+        </mat-error>
+        <ng-template #loading>
+          <mat-spinner></mat-spinner>
+        </ng-template>
+      </mat-card>
+    </ng-template>
+  </div>
+</div>

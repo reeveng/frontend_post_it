@@ -1,1 +1,56 @@
-<p>nav works!</p>
+<div class="c_nav--container">
+  <div>
+    <div fxLayout="row" fxLayoutAlign="space-between center" class="c_nav">
+      <div>
+        <button mat-mini-fab [routerLink]="['/home']">
+          <mat-icon aria-hidden="false" aria-label="home icon">
+            home
+          </mat-icon>
+        </button>
+        <span>Home</span>
+      </div>
+      <div id="logo">
+        <app-logo></app-logo>
+      </div>
+      <div *ngIf="(loggedInUser$ | async) then loggedIn; else notLoggedIn"> </div>
+      <ng-template #notLoggedIn>
+        <div>
+          <span>Login</span>
+          <button mat-mini-fab [routerLink]="['/login']">
+            <mat-icon aria-hidden="false" aria-label="login icon">
+              login
+            </mat-icon>
+          </button>
+        </div>
+      </ng-template>
+      <ng-template #loggedIn>
+        <div>
+          <span>Menu</span>
+          <button mat-mini-fab [matMenuTriggerFor]="menu">
+            <mat-icon aria-hidden="false" aria-label="logout icon">
+              menu
+            </mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <div class="menu-item">
+              <span>New post</span>
+              <button mat-mini-fab [routerLink]="['/newPost']">
+                <mat-icon aria-hidden="false" aria-label="new post icon">
+                  note_add
+                </mat-icon>
+              </button>
+            </div>
+            <div class="menu-item">
+              <span>Logout</span>
+              <button mat-mini-fab [routerLink]="['/home']" (click)="logout()">
+                <mat-icon aria-hidden="false" aria-label="logout icon">
+                  logout
+                </mat-icon>
+              </button>
+            </div>
+          </mat-menu>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>
