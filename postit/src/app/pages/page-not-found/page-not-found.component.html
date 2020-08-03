@@ -1,4 +1,16 @@
 <div class="c_page-not-found">
   <h1>404</h1>
-  <p>Oops! Something went wrong.</p>
+  <p>
+    Oops! Something went wrong.
+  </p>
+  <mat-card class="c_page-not-found__joke">
+    <mat-card-title>But here is joke.</mat-card-title>
+    <mat-card-content>
+      <div *ngIf="joke !== null">
+        {{joke.setup}}
+        <br />
+        <span class="c_page-not-found__joke--smaller">{{joke.punchline}}</span>
+      </div>
+    </mat-card-content>
+  </mat-card>
 </div>
