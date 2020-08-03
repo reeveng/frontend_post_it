@@ -1,10 +1,10 @@
 <mat-card>
-  <div fxLayoutAlign="space-between center" >
+  <div fxLayoutAlign="space-between center">
     <mat-form-field>
-      <textarea matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" placeholder="text" type="text"
-        #newComment></textarea>
+      <textarea data-cy="inputComment" matInput cdkTextareaAutosize #autosize="cdkTextareaAutosize" placeholder="text"
+        type="text" #newComment></textarea>
     </mat-form-field>
-    <button color="primary" (click)="addComment(newComment)" mat-raised-button>
+    <button data-cy="addCommentBtn" color="primary" (click)="addComment(newComment)" mat-raised-button>
       add comment
     </button>
   </div>

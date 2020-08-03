@@ -1,4 +1,4 @@
-<div fxLayoutAlign="center">
+<div fxLayoutAlign="center" data-cy="homepage">
   <div class="c_home--container">
     <div *ngIf="(users$ | async ) as users; else loadingOrError" fxFill>
       <div *ngIf="(loggedInUser$ | async) as user">

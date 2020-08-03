@@ -7,7 +7,7 @@
       <mat-card-content fxLayout="column">
         <span fxLayout="row" fxLayoutGap="2%">
           <mat-form-field>
-            <input matInput placeholder="first name" aria-label="first name" data-cy="register-firstName"
+            <input matInput placeholder="first name" aria-label="first name" data-cy="inputFirstName"
               formControlName="firstname" required />
             <mat-error *ngIf="
                 user.get('firstname').errors && user.get('firstname').touched
@@ -16,7 +16,7 @@
             </mat-error>
           </mat-form-field>
           <mat-form-field>
-            <input matInput placeholder="last name" aria-label="last name" data-cy="register-lastName"
+            <input matInput placeholder="last name" aria-label="last name" data-cy="inputLastName"
               formControlName="lastname" required />
             <mat-error *ngIf="
                 user.get('lastname').errors && user.get('lastname').touched
@@ -26,14 +26,14 @@
           </mat-form-field>
         </span>
         <mat-form-field>
-          <input matInput placeholder="email" aria-label="email" data-cy="register-email" formControlName="email" />
+          <input matInput placeholder="email" aria-label="email" data-cy="inputEmail" formControlName="email" />
           <mat-error data-cy="emailError" *ngIf="user.get('email').errors && user.get('email').touched">
             {{ getErrorMessage(user.get('email').errors) }}
           </mat-error>
         </mat-form-field>
         <span fxLayout="column" formGroupName="passwordGroup">
           <mat-form-field>
-            <input type="password" matInput placeholder="password" aria-label="password" data-cy="register-password"
+            <input type="password" matInput placeholder="password" aria-label="password" data-cy="inputPassword"
               formControlName="password" />
             <mat-error *ngIf="
                 user.get('passwordGroup').get('password').errors &&
@@ -48,7 +48,7 @@
           </mat-form-field>
           <mat-form-field>
             <input type="password" matInput placeholder="confirm password" aria-label="confirm password"
-              data-cy="register-password-confirm" formControlName="confirmPassword" />
+              data-cy="inputPassword-confirm" formControlName="confirmPassword" />
             <mat-error *ngIf="
                 user.get('passwordGroup').get('confirmPassword').errors &&
                 user.get('passwordGroup').get('confirmPassword').touched
@@ -71,10 +71,10 @@
       </mat-card-content>
 
       <mat-card-actions fxLayout="row" fxLayoutAlign="space-around center">
-        <button mat-raised-button data-cy="login-button" [routerLink]="['/login']">
+        <button mat-raised-button data-cy="login-button" [routerLink]="['/login']" data-cy="loginBtn">
           Login
         </button>
-        <button mat-raised-button type="submit" color="primary" data-cy="register-button">
+        <button mat-raised-button type="submit" color="primary" data-cy="registerBtn">
           Register
         </button>
       </mat-card-actions>

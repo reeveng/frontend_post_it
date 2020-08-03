@@ -5,7 +5,7 @@
       <form [formGroup]="post" (ngSubmit)='onSubmit()'>
         <mat-form-field>
           <input matInput aria-label="title" placeholder="Post title" type="text" formControlName="title" required
-            data-cy="title" />
+            data-cy="inputTitle" />
           <mat-error *ngIf="post.get('title')['errors'] && 
           post.get('title').touched">
             {{ getErrorMessage(post.get('title')['errors']) }}
@@ -14,7 +14,7 @@
         <br>
         <mat-form-field>
           <textarea matInput cdkTextareaAutosize aria-label="text" placeholder="text" type="text" required
-            formControlName="text" data-cy="text"></textarea>
+            formControlName="text" data-cy="inputText"></textarea>
           <mat-error *ngIf="post.get('text')['errors'] && 
           post.get('text').touched">
             {{ getErrorMessage(post.get('text')['errors']) }}
@@ -22,7 +22,7 @@
         </mat-form-field>
         <br>
         <div fxLayoutAlign="center">
-          <button color="primary" data-cy="add-post-button" mat-raised-button [disabled]='!post.valid'>
+          <button color="primary" data-cy="newPostBtn" mat-raised-button [disabled]='!post.valid'>
             Create new post
           </button>
         </div>
