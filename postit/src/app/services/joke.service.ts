@@ -14,7 +14,3 @@ export class JokeService {
     return this.http.get<Joke>(this.jokeUrl);
   }
 }
-
-
-// ["hip", "hip"]
-// hip hip array
