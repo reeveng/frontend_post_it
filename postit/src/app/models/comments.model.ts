@@ -5,8 +5,8 @@ export class Comments {
   ) { }
 
   static fromJSON(json: any): Comments {
-    const ing = new Comments(json.text, json.dateAdded);
-    return ing;
+    const comments = new Comments(json.text, json.dateAdded);
+    return comments;
   }
 
   get text() {

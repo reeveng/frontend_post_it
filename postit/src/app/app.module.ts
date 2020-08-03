@@ -27,6 +27,9 @@ import { AddCommentComponent } from './components/add-comment/add-comment.compon
 import { LogoComponent } from './components/logo/logo.component';
 import { AddPostComponent } from './components/add-post/add-post.component';
 
+// http-interceptor
+import { httpInterceptorProviders } from './http-interceptors';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,7 +58,7 @@ import { AddPostComponent } from './components/add-post/add-post.component';
     BrowserAnimationsModule,
     NgxTypedJsModule
   ],
-  providers: [],
+  providers: [httpInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

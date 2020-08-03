@@ -6,7 +6,7 @@ import { Comments } from 'src/app/models/comments.model';
 import { catchError } from 'rxjs/operators';
 import { EMPTY } from 'rxjs';
 
-import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from "@angular/router";
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-add-post',
@@ -29,10 +29,8 @@ export class AddPostComponent implements OnInit {
   }
 
   onSubmit() {
-    let newPost: Post = new Post(this.post.value.title, this.post.value.text, new Array<Comments>(), new Date());
-    this.newPost.emit(newPost);
-    console.log(newPost)
-    this._userService.addNewPost(newPost).pipe(
+    this.newPost.emit(new Post(this.post.value.title, this.post.value.text, new Array<Comments>(), new Date()));
+    this._userService.addNewPost(new Post(this.post.value.title, this.post.value.text, new Array<Comments>(), new Date())).pipe(
       catchError((err) => {
         this.errorMessage = err;
         return EMPTY;
