@@ -20,6 +20,7 @@ This project is part of the Web Application IV course for the Bachelor of Applie
 - [TypeScript](https://www.typescriptlang.org): TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
 - [ThreeJS](https://threejs.org): JavaScript 3D library.
 - [Ngx TypedJS](https://github.com/thevladeffect/ngx-typed-js): An Angular integration for Typed.js. Typed.js is a library that types.
+- [Joke API](http://www.official-joke-api.appspot.com): An application program interface that returns jokes.
 
 ## Team
 | <a href="https://github.com/reeveng" target="_blank">**Reeven Govaert**</a> | 
