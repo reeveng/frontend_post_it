@@ -1,4 +1,4 @@
-describe("My First Test", function () {
+describe("Visit homepage different ways and check correct representation of homepage", function () {
   beforeEach(function () {
     cy.login();
   });
