@@ -1,0 +1,19 @@
+<div fxLayoutAlign="center">
+  <div class="c_profile--container">
+    <div *ngIf="(user); else loading">
+      <mat-card class="c_profile--userName">
+        <div fxLayoutAlign="center stretch">
+          <mat-card-title>
+            <h1>{{user.firstName}} {{user.lastName}}</h1>
+          </mat-card-title>
+        </div>
+      </mat-card>
+      <div *ngFor="let post of user.posts">
+        <app-post data-cy="postCard" [post]="post" [user]="user"></app-post>
+      </div>
+    </div>
+    <ng-template #loading>
+      <mat-spinner></mat-spinner>
+    </ng-template>
+  </div>
+</div>

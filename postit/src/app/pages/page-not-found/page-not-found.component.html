@@ -1,0 +1,22 @@
+<div class="c_page-not-found">
+  <h1>404</h1>
+  <p>
+    Oops! Something went wrong.
+  </p>
+  <mat-card *ngIf="random == 0.5 || random < 0.5" class="c_page-not-found__joke">
+    <mat-card-title>But here is joke.</mat-card-title>
+    <mat-card-content>
+      <div *ngIf="joke !== null">
+        {{joke.setup}}
+        <br />
+        <span class="c_page-not-found__joke--smaller">{{joke.punchline}}</span>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <div *ngIf="random > 0.5">
+    <div *ngIf="gif !== null">
+      <img src="{{gif.url}}" height="{{gif.height}}" />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<!-- <mat-card class="">
+  <mat-card-header>
+    <div mat-card-avatar class=""></div>
+    <mat-card-title>Shiba Inu</mat-card-title>
+    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+      bred for hunting.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card> -->
+<!---->
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      <h2 id="title">{{post.title}}</h2>
+    </mat-card-title>
+    <mat-card-subtitle> Posted on {{post.dateAdded | date: 'MMMM d y, h:mm:ss'}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>{{post.text}}</p>
+    <br>
+    <div *ngIf="post.comments.length != 0">
+      <h3>Comments</h3>
+      <div *ngFor="let comment of post.comments">
+        <app-comments data-cy="commentCard" [comment]="comment"></app-comments>
+        <br>
+      </div>
+    </div>
+    <app-add-comment [post]="post" [user]="user"></app-add-comment>
+  </mat-card-content>
+</mat-card>
