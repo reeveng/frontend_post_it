@@ -80,12 +80,12 @@ Use the login credentials stated below to test the project's functionality.
 
 ## Screenshots
 <p align="center">
-    <img src="./imagesReadme/homepage.jpg?raw=true" width="256px">
-    <img src="./imagesReadme/loginpage.jpg?raw=true" width="256px">
-    <img src="./imagesReadme/homepageLoggedIn.jpg?raw=true" width="256px">
-    <img src="./imagesReadme/newpostpage.jpg?raw=true" width="256px">
-    <img src="./imagesReadme/profilepage.jpg?raw=true" width="256px">
-    <img src="./imagesReadme/404page.jpg?raw=true" width="256px">
+    <img src="./imagesReadme/homepage.JPGw=true" width="256px">
+    <img src="./imagesReadme/loginpage.JPG?raw=true" width="256px">
+    <img src="./imagesReadme/homepageLoggedIn.JPG?raw=true" width="256px">
+    <img src="./imagesReadme/newpostpage.JPG?raw=true" width="256px">
+    <img src="./imagesReadme/profilepage.JPG?raw=true" width="256px">
+    <img src="./imagesReadme/404page.JPG?raw=true" width="256px">
 </p>
 
 ## Created with :heart: by
