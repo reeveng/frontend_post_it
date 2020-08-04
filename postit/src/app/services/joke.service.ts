@@ -6,11 +6,11 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class JokeService {
-  private jokeUrl: string = 'https://official-joke-api.appspot.com/jokes/programming/random';
+  private baseUrl: string = 'https://official-joke-api.appspot.com/jokes/programming/random';
 
   constructor(private http: HttpClient) { }
 
   getJoke() {
-    return this.http.get<Joke>(this.jokeUrl);
+    return this.http.get<Joke>(this.baseUrl);
   }
 }
