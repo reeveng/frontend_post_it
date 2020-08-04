@@ -80,7 +80,7 @@ Use the login credentials stated below to test the project's functionality.
 
 ## Screenshots
 <p align="center">
-    <img src="./imagesReadme/homepage.JPGw=true" width="256px">
+    <img src="./imagesReadme/homepage.JPG?raw=true" width="256px">
     <img src="./imagesReadme/loginpage.JPG?raw=true" width="256px">
     <img src="./imagesReadme/homepageLoggedIn.JPG?raw=true" width="256px">
     <img src="./imagesReadme/newpostpage.JPG?raw=true" width="256px">
