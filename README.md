@@ -1,5 +1,6 @@
-<h1 align="center">Front-end</h1>
+<p align="center"><img src="./postit/src/android-chrome-256x256.png" width="200px"/></p>
 
+<h1 align="center">Front-end</h1>
 
 This the front-end application for the [restful API](https://github.com/Web-IV/1920-b1-be-reeveng).
 
