@@ -25,7 +25,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { CommentsComponent } from './components/comments/comments.component';
 import { AddCommentComponent } from './components/add-comment/add-comment.component';
 import { LogoComponent } from './components/logo/logo.component';
-import { AddPostComponent } from './components/add-post/add-post.component';
+import { AddPostComponent } from './pages/add-post/add-post.component';
 
 // http-interceptor
 import { httpInterceptorProviders } from './http-interceptors';
