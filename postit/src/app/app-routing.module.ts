@@ -1,4 +1,4 @@
-import { AddPostComponent } from './components/add-post/add-post.component';
+import { AddPostComponent } from './pages/add-post/add-post.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { LoginComponent } from './pages/login/login.component';
 import { NgModule } from '@angular/core';
