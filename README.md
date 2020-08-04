@@ -78,6 +78,16 @@ Use the login credentials stated below to test the project's functionality.
 - [Joke API](http://www.official-joke-api.appspot.com): An application program interface that returns jokes.
 - [Giphy API](https://developers.giphy.com): An application program interface that returns gifs.
 
+## Screenshots
+<p align="center">
+    <img src="./imagesReadme/homepage.jpg?raw=true" width="256px">
+    <img src="./imagesReadme/loginpage.jpg?raw=true" width="256px">
+    <img src="./imagesReadme/homepageLoggedIn.jpg?raw=true" width="256px">
+    <img src="./imagesReadme/newpostpage.jpg?raw=true" width="256px">
+    <img src="./imagesReadme/profilepage.jpg?raw=true" width="256px">
+    <img src="./imagesReadme/404page.jpg?raw=true" width="256px">
+</p>
+
 ## Created with :heart: by
 | <a href="https://github.com/reeveng" target="_blank">**Reeven Govaert**</a> | 
 | --- | 
